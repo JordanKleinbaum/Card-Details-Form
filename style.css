@@ -273,7 +273,6 @@ input::-webkit-inner-spin-button {
     position: relative;
     background-image: url(./images/bg-main-desktop.png);
     width: 33%;
-
     height: 100vh;
   }
 
@@ -285,7 +284,6 @@ input::-webkit-inner-spin-button {
   .front-card {
     width: 445px;
     top: 185px;
-
     right: -135px;
   }
 
@@ -306,6 +304,7 @@ input::-webkit-inner-spin-button {
   .expiration-year {
     top: 390px;
     font-size: 18.6px;
+    transform: translateX(150px);
   }
 
   .expiration-month {
@@ -322,15 +321,16 @@ input::-webkit-inner-spin-button {
 
   .two-circles {
     top: 215px;
-
+    transform: translateX(350px);
     width: 85.5px;
   }
 
   .card-number {
     font-size: 34.1px;
-    top: 330px;
+    top: 320px;
     left: 195px;
     min-width: 400px;
+    transform: translateX(175px);
   }
 
   .card-name {
@@ -338,6 +338,7 @@ input::-webkit-inner-spin-button {
     letter-spacing: 1.55px;
     left: 195px;
     top: 390px;
+    transform: translateX(175px);
   }
 
   .entire-completed-state {
