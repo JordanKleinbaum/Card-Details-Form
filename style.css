@@ -320,8 +320,9 @@ input::-webkit-inner-spin-button {
   }
 
   .two-circles {
+    position: absolute;
     top: 215px;
-    transform: translateX(350px);
+    right: 180px;
     width: 85.5px;
   }
 
