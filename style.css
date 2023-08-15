@@ -75,9 +75,9 @@ main {
 
 .card-number {
   position: absolute;
-  font-size: 22px;
+  font-size: 23px;
   top: 200px;
-  left: 36px;
+  transform: translateX(32px);
   color: var(--White);
 }
 
@@ -274,6 +274,7 @@ input::-webkit-inner-spin-button {
     background-image: url(./images/bg-main-desktop.png);
     width: 33%;
     height: 100vh;
+    border: 1px solid red;
   }
 
   form {
@@ -327,11 +328,10 @@ input::-webkit-inner-spin-button {
   }
 
   .card-number {
+    position: absolute;
     font-size: 34.1px;
-    top: 320px;
-    left: 195px;
-    min-width: 400px;
-    transform: translateX(175px);
+    top: 306px;
+    right: -86px;
   }
 
   .card-name {
