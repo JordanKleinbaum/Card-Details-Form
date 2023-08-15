@@ -71,7 +71,6 @@ main {
   top: 142px;
   right: -30px;
   width: 55px;
-  border: 1px solid red;
 }
 
 .card-number {
@@ -148,6 +147,14 @@ input {
   width: 100%;
   border-radius: 10px;
   border: 1px solid var(--lightGray);
+}
+
+.name-input:focus,
+.number-input:focus,
+.exp-date-input:focus,
+.yy-input:focus,
+.cvc-input:focus {
+  border: 1px solid hsl(278, 94%, 30%);
 }
 
 .name-error,
