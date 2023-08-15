@@ -274,7 +274,6 @@ input::-webkit-inner-spin-button {
     background-image: url(./images/bg-main-desktop.png);
     width: 33%;
     height: 100vh;
-    border: 1px solid red;
   }
 
   form {
