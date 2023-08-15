@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Interactive Card Details Form</title>
+  </head>
+  <body>
+    <main>
+      <div class="entire-top-wrapper">
+        <img src="./images/bg-card-back.png" class="back-card" />
+        <p class="cvc">000</p>
+        <div class="front-card-wrapper">
+          <img src="./images/bg-card-front.png" class="front-card" />
+          <img src="./images/card-logo.svg" class="two-circles" />
+          <p class="card-number">0000 0000 0000 0000</p>
+          <p class="card-name" placehol>Jane Appleseed</p>
+          <p class="expiration-month">00</p>
+          <p class="dash">/</p>
+          <p class="expiration-year">00</p>
+        </div>
+      </div>
+
+      <form action="#" class="entire-form-button-wrapper" novalidate>
+        <!-- Completed state start -->
+        <div class="entire-completed-state">
+          <img src="./images/icon-complete.svg" alt="" class="checkmark" />
+          <h2 class="thank-you">Thank you!</h2>
+          <p class="we-added">We've added your card details</p>
+          <button type="submit" class="continue-button">Continue</button>
+        </div>
+        <!--Complete state end-->
+        <section class="toggle-display">
+          <section class="cardholder-name-wrapper">
+            <label for="name">Cardholder Name</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="e.g. Jane Appleseed"
+              class="name-input"
+              maxlength="18"
+              id="name-input"
+              required
+            />
+            <p class="name-error">Wrong Format, Can Only Contain Letters</p>
+            <p class="name-blank-error">Can't be blank</p>
+          </section>
+
+          <section class="cardholder-number-wrapper">
+            <label for="number">Card Number</label>
+            <input
+              type="text"
+              name="number"
+              placeholder="e.g. 1234 5678 9123 0000"
+              class="number-input"
+              id="number-input"
+              maxlength="19"
+              required=""
+            />
+            <p class="number-error">Wrong Format, Can Only Contain Numbers</p>
+            <p class="number-blank-error">Can't be blank</p>
+            <p class="number-16-error">Must have 16 characters</p>
+          </section>
+
+          <div class="last-three-inputs">
+            <section class="cardholder-exp-date-wrapper">
+              <label for="exp-date">Exp. Date</label>
+              <input
+                type="number"
+                name="exp-date"
+                placeholder="MM"
+                class="exp-date-input"
+                id="month-input"
+                onkeypress="return event.keyCode === 8 || event.charCode >= 48 && event.charCode <= 57"
+                required
+              />
+              <p class="exp-blank-error">Can't be blank</p>
+              <p class="number-2-error">Must have 2 numbers</p>
+            </section>
+
+            <section class="cardholder-issued-date-wrapper">
+              <label for="issued-date">(MM/YY)</label>
+              <input
+                type="number"
+                name="issued-date"
+                placeholder="YY"
+                class="yy-input"
+                id="year-input"
+                onkeypress="return event.keyCode === 8 || event.charCode >= 48 && event.charCode <= 57"
+                required
+              />
+              <p class="yy-blank-error">Can't be blank</p>
+              <p class="number-2-error-yy">Must have 2 numbers</p>
+            </section>
+
+            <section class="cardholder-cvc-wrapper">
+              <label for="cvc">CVC</label>
+              <input
+                type="number"
+                name="cvc"
+                placeholder="e.g. 123 "
+                class="cvc-input"
+                id="cvc-input"
+                onkeypress="return event.keyCode === 8 || event.charCode >= 48 && event.charCode <= 57"
+                required
+              />
+              <p class="cvc-blank-error">Can't be blank</p>
+              <p class="number-3-error">Must have 3 numbers</p>
+            </section>
+          </div>
+          <button type="submit" class="submit-button">Confirm</button>
+        </section>
+      </form>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
