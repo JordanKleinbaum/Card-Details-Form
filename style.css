@@ -86,7 +86,7 @@ main {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  left: 35px;
+  transform: translateX(35px);
   top: 242px;
   color: var(--lightGray);
 }
@@ -336,9 +336,9 @@ input::-webkit-inner-spin-button {
   .card-name {
     font-size: 18.6px;
     letter-spacing: 1.55px;
-    left: 195px;
+
     top: 390px;
-    transform: translateX(175px);
+    right: 122px;
   }
 
   .entire-completed-state {
