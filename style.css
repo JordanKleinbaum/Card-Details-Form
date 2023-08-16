@@ -96,7 +96,7 @@ main {
   color: var(--lightGray);
   top: 242px;
   font-size: 12px;
-  left: 247px;
+  transform: translateX(247px);
 }
 
 .dash {
@@ -104,7 +104,7 @@ main {
   color: var(--lightGray);
   top: 242px;
   font-size: 12px;
-  left: 265px;
+  transform: translateX(265px);
 }
 
 .expiration-year {
@@ -112,7 +112,7 @@ main {
   color: var(--lightGray);
   top: 242px;
   font-size: 12px;
-  left: 272px;
+  transform: translateX(272px);
 }
 
 form {
@@ -308,15 +308,15 @@ input::-webkit-inner-spin-button {
   }
 
   .expiration-month {
-    left: 525px;
+    right: 60px;
   }
 
   .dash {
-    left: 555px;
+    right: 50px;
   }
 
   .expiration-year {
-    left: 570px;
+    right: 20px;
   }
 
   .two-circles {
