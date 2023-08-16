@@ -19,7 +19,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Space Grotesk", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 body {
@@ -31,7 +31,7 @@ body {
 }
 
 main {
-  min-width: 375px;
+  min-width: 23.4375rem;
   width: 100%;
 }
 
@@ -41,88 +41,88 @@ main {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 240px;
+  min-height: 15rem;
 }
 
 .back-card {
   position: absolute;
-  top: 32px;
-  right: 15px;
-  width: 286px;
+  top: 2rem;
+  right: 0.9375rem;
+  width: 17.875rem;
 }
 
 .cvc {
   position: absolute;
   color: var(--lightGray);
-  font-size: 11px;
-  top: 101px;
-  right: 47px;
+  font-size: 0.6875rem;
+  top: 6.3125rem;
+  right: 2.9375rem;
 }
 
 .front-card {
-  width: 286px;
+  width: 17.875rem;
   position: absolute;
-  top: 120px;
-  transform: translateX(16px);
+  top: 7.5rem;
+  transform: translateX(1rem);
 }
 
 .two-circles {
   position: relative;
-  top: 142px;
-  right: -30px;
-  width: 55px;
+  top: 8.875rem;
+  right: -1.875rem;
+  width: 3.4375rem;
 }
 
 .card-number {
   position: absolute;
-  font-size: 23px;
-  top: 200px;
-  transform: translateX(32px);
+  font-size: 1.4375rem;
+  top: 12.5rem;
+  transform: translateX(2rem);
   color: var(--White);
 }
 
 .card-name {
   position: absolute;
-  font-size: 12px;
+  font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  transform: translateX(35px);
-  top: 242px;
+  letter-spacing: 0.0625rem;
+  transform: translateX(2.1875rem);
+  top: 15.125rem;
   color: var(--lightGray);
 }
 
 .expiration-month {
   position: absolute;
   color: var(--lightGray);
-  top: 242px;
-  font-size: 12px;
-  transform: translateX(247px);
+  top: 15.125rem;
+  font-size: 0.75rem;
+  transform: translateX(15.4375rem);
 }
 
 .dash {
   position: absolute;
   color: var(--lightGray);
-  top: 242px;
-  font-size: 12px;
-  transform: translateX(265px);
+  top: 15.125rem;
+  font-size: 0.75rem;
+  transform: translateX(16.5625rem);
 }
 
 .expiration-year {
   position: absolute;
   color: var(--lightGray);
-  top: 242px;
-  font-size: 12px;
-  transform: translateX(272px);
+  top: 15.125rem;
+  font-size: 0.75rem;
+  transform: translateX(17rem);
 }
 
 form {
-  padding: 90px 23px 44px;
+  padding: 5.625rem 1.4375rem 2.75rem;
   display: flex;
   flex-direction: column;
 }
 
 .toggle-display {
-  min-height: 460px;
+  min-height: 28.75rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -130,23 +130,23 @@ form {
 
 label {
   text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 2px;
+  font-size: 0.75rem;
+  letter-spacing: 0.125rem;
   color: var(--DarkViolet);
   font-weight: 700;
 }
 
 input {
-  padding-top: 10px;
-  padding: 15px;
+  padding-top: 0.625rem;
+  padding: 0.9375rem;
   outline: none;
 }
 
 .name-input,
 .number-input {
   width: 100%;
-  border-radius: 10px;
-  border: 1px solid var(--lightGray);
+  border-radius: 0.625rem;
+  border: 0.0625rem solid var(--lightGray);
 }
 
 .name-input:focus,
@@ -154,7 +154,7 @@ input {
 .exp-date-input:focus,
 .yy-input:focus,
 .cvc-input:focus {
-  border: 1px solid hsl(278, 94%, 30%);
+  border: 0.0625rem solid hsl(278, 94%, 30%);
 }
 
 .name-error,
@@ -169,18 +169,18 @@ input {
 .number-3-error,
 .cvc-blank-error {
   color: var(--inputErrors);
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 700;
-  padding-left: 2px;
-  padding-top: 1px;
+  padding-left: 0.125rem;
+  padding-top: 0.0625rem;
   display: none;
 }
 
 .exp-blank-error,
 .yy-blank-error,
 .cvc-blank-error {
-  min-width: 110px;
-  padding-left: 1px;
+  min-width: 6.875rem;
+  padding-left: 0.0625rem;
 }
 
 .last-three-inputs {
@@ -196,8 +196,8 @@ input {
 .exp-date-input,
 .yy-input,
 .cvc-input {
-  border-radius: 10px;
-  border: 1px solid var(--lightGray);
+  border-radius: 0.625rem;
+  border: 0.0625rem solid var(--lightGray);
 }
 
 .exp-date-input,
@@ -219,15 +219,15 @@ input {
   color: var(--lightGray);
   background-color: var(--DarkViolet);
   border: none;
-  border-radius: 7px;
-  padding: 20px 0px;
+  border-radius: 0.4375rem;
+  padding: 1.25rem 0rem;
   cursor: pointer;
   width: 100%;
 }
 
 /* THANK YOU PAGE */
 .entire-completed-state {
-  min-height: 500px;
+  min-height: 31.25rem;
   display: none;
   flex-direction: column;
   align-items: center;
@@ -235,14 +235,14 @@ input {
 }
 
 .checkmark {
-  width: 80px;
+  width: 5rem;
 }
 
 .thank-you {
   color: var(--DarkViolet);
   text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 30px;
+  letter-spacing: 0.125rem;
+  font-size: 1.875rem;
   font-weight: 500;
 }
 
@@ -257,7 +257,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-@media (width >= 1280px) {
+@media (width >= 80rem) {
   body {
     min-height: 100%;
     min-width: 100vw;
@@ -277,74 +277,74 @@ input::-webkit-inner-spin-button {
   }
 
   form {
-    margin-right: 100px;
+    margin-right: 6.25rem;
     width: 42%;
   }
 
   .front-card {
-    width: 445px;
-    top: 185px;
-    right: -135px;
+    width: 27.8125rem;
+    top: 11.5625rem;
+    right: -8.4375rem;
   }
 
   .back-card {
-    top: 470px;
-    right: -225px;
-    width: 445px;
+    top: 29.375rem;
+    right: -14.0625rem;
+    width: 27.8125rem;
   }
 
   .cvc {
-    font-size: 17.05px;
-    top: 579px;
-    right: -150px;
+    font-size: 1.0656rem;
+    top: 36.1875rem;
+    right: -9.375rem;
   }
 
   .expiration-month,
   .dash,
   .expiration-year {
-    top: 390px;
-    font-size: 18.6px;
-    transform: translateX(150px);
+    top: 24.375rem;
+    font-size: 1.1625rem;
+    transform: translateX(9.375rem);
   }
 
   .expiration-month {
-    right: 60px;
+    right: 3.75rem;
   }
 
   .dash {
-    right: 50px;
+    right: 3.125rem;
   }
 
   .expiration-year {
-    right: 20px;
+    right: 1.25rem;
   }
 
   .two-circles {
     position: absolute;
-    top: 215px;
-    right: 180px;
-    width: 85.5px;
+    top: 13.4375rem;
+    right: 11.25rem;
+    width: 5.3438rem;
   }
 
   .card-number {
     position: absolute;
-    font-size: 34.1px;
-    top: 306px;
-    right: -86px;
+    font-size: 2.1313rem;
+    top: 19.125rem;
+    right: -5.375rem;
   }
 
   .card-name {
-    font-size: 18.6px;
-    letter-spacing: 1.55px;
-    top: 390px;
-    right: 122px;
+    font-size: 1.1625rem;
+    letter-spacing: 0.0969rem;
+    top: 24.375rem;
+    right: 7.625rem;
   }
 
   .entire-completed-state {
     position: absolute;
     top: center;
-    width: 700px;
-    padding: 20px;
+    width: 43.75rem;
+    padding: 1.25rem;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
